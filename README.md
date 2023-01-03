@@ -1,4 +1,4 @@
-![version_070](./assets/images/version_070.svg)![license](./assets/images/license.svg)![maintainedyes](./assets/images/maintainedyes.svg)
+![version_070](./assets/images/version_070.svg) ![license](./assets/images/license.svg) ![maintainedyes](./assets/images/maintainedyes.svg)
 
 **:star: If you use it, you should star it on Github!** *It's the least you can do for all the work put into it!*
 
