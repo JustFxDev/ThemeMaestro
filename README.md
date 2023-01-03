@@ -1,6 +1,4 @@
-[![version_070](./assets/images/version_070.svg)](https://github.com/JustFxDev/ThemeMaestro/releases)
-[![license](./assets/images/license.svg)](https://github.com/JustFxDev/ThemeMaestro/blob/main/LICENSE)
-[![maintainedyes](./assets/images/maintainedyes.svg)](https://github.com/JustFxDev/ThemeMaestro/graphs/contributors)
+[![version_070](./assets/images/version_070.svg)](https://github.com/JustFxDev/ThemeMaestro/releases) [![license](./assets/images/license.svg)](https://github.com/JustFxDev/ThemeMaestro/blob/main/LICENSE) [![maintainedyes](./assets/images/maintainedyes.svg)](https://github.com/JustFxDev/ThemeMaestro/graphs/contributors)
 
 **:star: If you use it, you should star it on Github!** *It's the least you can do for all the work put into it!*
 
@@ -186,12 +184,3 @@ This is very uncomfortable. But keep in mind this is the first public version of
 ## Join
 
 *Contributors are welcome! Help is needed especially for upcoming php plugin programming, but also for css / design improvements or just additional coloring schemes.*
-
-
-
-
-
-
-
-
-

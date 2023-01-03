@@ -1,0 +1,71 @@
+/* 
+    Extra colors for all board headers or 
+    for headers for specifc boards
+
+    https://github.com/JustFxDev/ThemeMaestro
+
+    12/2022 by fx
+*/
+
+/* multi color example for *all* Boards  */
+
+/* column headers font  */
+.board-column-title .dropdown-menu {
+    text-decoration: none;
+    color: #fff;
+}
+.board-column-header-task-count {
+    color: #ffffff;
+}
+
+/* Column 1 */
+#board th.board-column-header:nth-child(1) {
+    background-color: #30bfbf;
+}
+
+/* Column 2 */
+#board th.board-column-header:nth-child(2) {
+    background-color: #ff9f1a;
+}
+
+/* Column 3 */
+#board th.board-column-header:nth-child(3) {
+    background-color: #ffd500;
+}
+
+/* Column 4 */
+#board th.board-column-header:nth-child(4) {
+    background-color: #00aaff;
+}
+
+/* Column 5 */
+#board th.board-column-header:nth-child(5) {
+    background-color: #00aaff;
+}
+
+/* Column 6 */
+#board th.board-column-header:nth-child(6) {
+    background-color: #8f7ee6;
+}
+
+/* Column 7 */
+#board th.board-column-header:nth-child(7) {
+    background-color: #98aab3;
+}
+
+/* Column 8 */
+#board th.board-column-header:nth-child(8) {
+    background-color: #2bd9d9;
+}
+
+/* 
+    Coloring specific board columns by board id
+    you can take the board id form the list of available boards
+    or from the browser adress bar when in board view
+    .....&project_id=X where X is your board ID
+*/
+
+/* Example board with ID 326 first column header colored RED */
+.board-project-326 th.board-column-header:nth-child(1) {
+    background-color: #f00000!important;
+}

@@ -1,0 +1,69 @@
+/* 
+    Main coloring for Theme Maestro
+
+    blue
+
+    https://github.com/JustFxDev/ThemeMaestro
+
+    12/2022 by fx
+    
+*/
+
+
+:root{
+    --light-gray: #F2F5F6;
+    --lighter-gray:#e4e4e4;
+    --middle-gray: #ccc;
+
+    --blue:#2980b9;
+    --dark-blue:#2573a7;
+
+    --light-font:#f2f2f2;
+    --dark-font:#333333;
+    --darker-font: #222;
+
+    --lighter-orange:#ffbb8e;
+    --light-orange:#b96229;
+    --middle-orange:#944e21;
+
+    --task-card-bg: white;
+
+    --color-primary: var(--dark-font);
+    --link-color-primary: var(--dark-font);
+    --button-primary-background-color:var(--blue);
+    --button-primary-background-color-focus:var(--dark-blue);
+    --button-danger-background-color:var(--light-orange);
+    --button-danger-background-color-focus:var(--middle-orange);
+    --board-task-limit-color: var(--lighter-orange);
+    
+    --board-header-color: #ffffff;              /* Top Header */
+    --board-2ndheader-color: #98c1d9;;          /* Menu Header / 2nd Headerline */
+    --board-column-header-color: #3d5a80;       /* Default Column Header Color */
+    --board-column-header-font-color: #ffffff;  /* Default Column Header Font Color */
+    
+    --activity-event-hover-color: #ee6d4d50;      /* Hover color table lists */
+    
+    --dropdown-menu-hover-color: #ffffff;       /* drop down menu hover color */
+    --dropdown-menu-hover-background-color: #ee6c4d;       /* drop down menu hover color */
+
+    --views-menu-hover-color: #ee6c4d;         /* Hover link top bar / views */
+
+    --sidebar-menu-hover-color: var(--dropdown-menu-hover-background-color);         /* Hover link color in sidebar */
+
+    --button-default-border-color: #888888;     
+    --button-default-background-color: var(--board-column-header-color);
+    --button-default-color: #ffffff;            /* Button font color */
+    --button-primary-background-color-focus: var(--dropdown-menu-hover-background-color);
+
+    --font-weight-hover: 600;                   /* Font weight for hovering links */
+}
+
+/* Board Column Backgrounds */
+#board-container td:nth-child(even) {
+    background: #edf0f1;
+}
+
+#board-container td:nth-child(odd) {
+    background: #f1f4f5;
+
+}
