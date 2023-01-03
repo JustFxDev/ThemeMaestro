@@ -1,4 +1,6 @@
-![version_070](./assets/images/version_070.svg) ![license](./assets/images/license.svg) ![maintainedyes](./assets/images/maintainedyes.svg)
+[![version_070](./assets/images/version_070.svg)](https://github.com/JustFxDev/ThemeMaestro/releases)
+[![license](./assets/images/license.svg)](https://github.com/JustFxDev/ThemeMaestro/blob/main/LICENSE)
+[![maintainedyes](./assets/images/maintainedyes.svg)](https://github.com/JustFxDev/ThemeMaestro/graphs/contributors)
 
 **:star: If you use it, you should star it on Github!** *It's the least you can do for all the work put into it!*
 
@@ -19,8 +21,10 @@ A theme with few color options for [Kanboard](https://github.com/kanboard/kanboa
 
 #### Theme Red
 <img src="./assets/images/red.png" alt="red" />
+
 #### Theme Green  
 <img src="./assets/images/green.png" alt="green"/>
+
 #### Theme Blue  
 <img src="./assets/images/blue.png" alt="blue" />
 
