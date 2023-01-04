@@ -49,6 +49,8 @@ A list of plugins that you might recognize from the screenshots or that have pro
 
 Requires [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban Project Management Software") ≥`v1.2.20`
 
+Important: If you use the [Customizer](https://github.com/creecros/Customizer) PlugIn, make sure that the Customizer theme selection is set to the *Default* option.
+
 ## Installation
 
 Options for the installation:
@@ -183,4 +185,4 @@ This is very uncomfortable. But keep in mind this is the first public version of
 
 ## Join
 
-*Contributors are welcome! Help is needed especially for upcoming php plugin programming, but also for css / design improvements or just additional coloring schemes.*
+*Contributors are welcome!* Help is needed especially for upcoming php plugin programming, but also for css / design improvements or just additional coloring schemes.
