@@ -11,7 +11,7 @@ class Plugin extends Base
     {
         // CSS - Asset Hook
         //  - Keep filename lowercase
-        $this->hook->on('template:layout:css', array('template' => 'plugins/ThemeMaestro/Assets/css/theme-maestro.css'));
+        $this->hook->on('template:layout:css', array('template' => 'plugins/ThemeMaestro/Assets/css/theme_maestro.css'));
     }
 
     public function onStartup()
@@ -33,12 +33,12 @@ class Plugin extends Base
 
     public function getPluginAuthor()
     {
-        return 'JustFxDev';
+        return 'JustFxDev (Fx)';
     }
 
     public function getPluginVersion()
     {
-        return '0.7.0';
+        return '0.8.0';
     }
 
     public function getCompatibleVersion()
