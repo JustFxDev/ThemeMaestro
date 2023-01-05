@@ -1,4 +1,4 @@
-[![version_070](./assets/images/version_070.svg)](https://github.com/JustFxDev/ThemeMaestro/releases) [![license](./assets/images/license.svg)](https://github.com/JustFxDev/ThemeMaestro/blob/main/LICENSE) [![maintainedyes](./assets/images/maintainedyes.svg)](https://github.com/JustFxDev/ThemeMaestro/graphs/contributors)
+[![version_070](./Assets/images/version_070.svg)](https://github.com/JustFxDev/ThemeMaestro/releases) [![license](./Assets/images/license.svg)](https://github.com/JustFxDev/ThemeMaestro/blob/main/LICENSE) [![maintainedyes](./Assets/images/maintainedyes.svg)](https://github.com/JustFxDev/ThemeMaestro/graphs/contributors)
 
 **:star: If you use it, you should star it on Github!** *It's the least you can do for all the work put into it!*
 
@@ -18,16 +18,16 @@ A theme with few color options for [Kanboard](https://github.com/kanboard/kanboa
 ## Screenshots
 
 #### Theme Red
-<img src="./assets/images/red.png" alt="red" />
+<img src="./Assets/images/red.png" alt="red" />
 
 #### Theme Green  
-<img src="./assets/images/green.png" alt="green"/>
+<img src="./Assets/images/green.png" alt="green"/>
 
 #### Theme Blue  
-<img src="./assets/images/blue.png" alt="blue" />
+<img src="./Assets/images/blue.png" alt="blue" />
 
 #### Theme Blue Colorful  
-<img src="./assets/images/blue_colored.png" alt="blue_colored" /> 
+<img src="./Assets/images/blue_colored.png" alt="blue_colored" /> 
 
 ## Recommended PlugIns
 
@@ -90,21 +90,21 @@ This looks more complicated than it is. The main file `ThemeMaestro.css` include
 ```css
 /*  main colors and vars include your favorit color.css here */
 
-/* @import url("./red.css"); */
-@import url("./blue.css");
-/* @import url("./green.css"); */
+/* @import url("./Assets/css/red.css"); */
+@import url("./Assets/css/blue.css");
+/* @import url("./Assets/css/green.css"); */
 
 /*  Include column header colors for all boards and         */
 /*  column header colors for specific boards                */
 /*  if you wish to have different header colors per column  */
 
-/* @import url("./column_colors_multi.css"); */
-@import url("./column_colors_none.css");
+/* @import url("./Assets/css/column_colors_multi.css"); */
+@import url("./Assets/css/column_colors_none.css");
 ```
 
 You change in the CSS file, which color file the theme should use. If you want to create your own colors, then you simply copy e.g. `blue.css` and rename the file. 
 
-For example to `amber.css` Then you make the desired adjustments for the colors in this new file and integrate these `@import url(./amber.css)` instead of the `@import url(./blue.css)`.
+For example to `amber.css` Then you make the desired adjustments for the colors in this new file and integrate these `@import url(./Assets/css/amber.css)` instead of the `@import url(./Assets/css/blue.css)`.
 
 #### Change the color in the column headers
 
@@ -112,7 +112,7 @@ If you like it a bit more colorful you have the following options:
 
 ##### Colored column headers for all boards for all users
 
-Make sure to include `column_colors_multi.css` in `ThemeMaestro.css` see above.
+Make sure to include `column_colors_multi.css` in `theme-maestro.css` see above.
 
 Open and edit  `column_colors_multi.css` and set your prefered colors . This css file is well document and you can easily figure out what to change how:
 
