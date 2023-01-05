@@ -1,4 +1,4 @@
-[![version_070](./Assets/images/version_070.svg)](https://github.com/JustFxDev/ThemeMaestro/releases) [![license](./Assets/images/license.svg)](https://github.com/JustFxDev/ThemeMaestro/blob/main/LICENSE) [![maintainedyes](./Assets/images/maintainedyes.svg)](https://github.com/JustFxDev/ThemeMaestro/graphs/contributors)
+[![version](./Assets/images/version.svg)](https://github.com/JustFxDev/ThemeMaestro/releases) [![license](./Assets/images/license.svg)](https://github.com/JustFxDev/ThemeMaestro/blob/main/LICENSE) [![maintainedyes](./Assets/images/maintainedyes.svg)](https://github.com/JustFxDev/ThemeMaestro/graphs/contributors)
 
 **:star: If you use it, you should star it on GitHub!** *It's the least you can do for all the work put into it!*
 
