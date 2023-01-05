@@ -9,7 +9,9 @@ class Plugin extends Base
 {
     public function initialize()
     {
-        $this->hook->on('template:layout:css', array('template' => 'plugins/ThemeMaestro/ThemeMaestro.css'));
+        // CSS - Asset Hook
+        //  - Keep filename lowercase
+        $this->hook->on('template:layout:css', array('template' => 'plugins/ThemeMaestro/Assets/css/theme-maestro.css'));
     }
 
     public function onStartup()
