@@ -3,6 +3,7 @@
 namespace Kanboard\Plugin\ThemeMaestro;
 
 use Kanboard\Core\Plugin\Base;
+use Kanboard\Core\Translator;
 
 class Plugin extends Base
 {
@@ -11,14 +12,21 @@ class Plugin extends Base
         $this->hook->on('template:layout:css', array('template' => 'plugins/ThemeMaestro/ThemeMaestro.css'));
     }
 
+    public function onStartup()
+    {
+        Translator::load($this->languageModel->getCurrentLanguage(), __DIR__.'/Locale');
+    }
+
     public function getPluginName()
     {
+        // Plugin Name MUST be identical to namespace for Plugin Directory to detect updated versions
+        // Do not translate the plugin name here
         return 'ThemeMaestro';
     }
 
     public function getPluginDescription()
     {
-        return 'A colorful theme to utilise color sets to refresh the interface.';
+        return t('A colorful theme to refresh the interface using different color schemes.');
     }
 
     public function getPluginAuthor()
