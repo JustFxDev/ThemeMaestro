@@ -1,6 +1,9 @@
 <?php
+
 namespace Kanboard\Plugin\ThemeMaestro;
+
 use Kanboard\Core\Plugin\Base;
+
 class Plugin extends Base
 {
     public function initialize()
@@ -15,12 +18,12 @@ class Plugin extends Base
 
     public function getPluginDescription()
     {
-        return t('Nice and more colored theme family for Kanboard. Supports the Customizer plugin.');
+        return 'A colorful theme to utilise color sets to refresh the interface.';
     }
 
     public function getPluginAuthor()
     {
-        return 'JustFxDev (fx)';
+        return 'JustFxDev';
     }
 
     public function getPluginVersion()
@@ -28,13 +31,17 @@ class Plugin extends Base
         return '0.7.0';
     }
 
+    public function getCompatibleVersion()
+    {
+        // Examples:
+        // >=1.0.37
+        // <1.0.37
+        // <=1.0.37
+        return '>=1.2.11';
+    }
+
     public function getPluginHomepage()
     {
         return 'https://github.com/JustFxDev/ThemeMaestro';
-    }
-
-    public function getCompatibleVersion()
-    {
-        return '>=1.2.11';
     }
 }
