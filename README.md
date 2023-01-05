@@ -1,6 +1,6 @@
 [![version_070](./Assets/images/version_070.svg)](https://github.com/JustFxDev/ThemeMaestro/releases) [![license](./Assets/images/license.svg)](https://github.com/JustFxDev/ThemeMaestro/blob/main/LICENSE) [![maintainedyes](./Assets/images/maintainedyes.svg)](https://github.com/JustFxDev/ThemeMaestro/graphs/contributors)
 
-**:star: If you use it, you should star it on Github!** *It's the least you can do for all the work put into it!*
+**:star: If you use it, you should star it on GitHub!** *It's the least you can do for all the work put into it!*
 
 # Theme Maestro
 
@@ -12,7 +12,7 @@ A theme with few color options for [Kanboard](https://github.com/kanboard/kanboa
 - Three (four) color sets are already included: Red, Blue, Green and Colorful Headers
 - Due date is displayed in red on the card when it's missed
 - Many small things in the design have been improved
-- Some PlugIns are considered in the CSS
+- Some plugins are considered in the CSS
 - With a little effort, each board can use its own colors for the headers (background and font) via the board ID and CSS for that board. Needs CustomUserCSS plugin or direct editing of the included CSS sections
 
 ## Screenshots
@@ -29,11 +29,11 @@ A theme with few color options for [Kanboard](https://github.com/kanboard/kanboa
 #### Theme Blue Colorful  
 <img src="./Assets/images/blue_colored.png" alt="blue_colored" /> 
 
-## Recommended PlugIns
+## Recommended plugins
 
 A list of plugins that you might recognize from the screenshots or that have proven to be a good addition to Kanboard Core in general
 
-| PlugIn                                                       | Provides                                                     |
+| Plugin                                                       | Provides                                                     |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | [ColorManager](https://github.com/aljawaid/ColorManager)     | Adds 50 more colors to the base system for tasks, tags and categories and also allows to create custom colors for them. Must have. |
 | [Boardcustomizer](https://github.com/TimoStahl/kanboard_plugin_boardcustomizer) | Allows to show and hide different elements for each user. In particular, it is possible to hide icons on tasks that are not needed. |
@@ -49,15 +49,15 @@ A list of plugins that you might recognize from the screenshots or that have pro
 
 Requires [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban Project Management Software") ≥`v1.2.20`
 
-Important: If you use the [Customizer](https://github.com/creecros/Customizer) PlugIn, make sure that the Customizer theme selection is set to the *Default* option.
+Important: If you use the [Customizer](https://github.com/creecros/Customizer) plugin, make sure that the Customizer theme selection is set to the *Default* option.
 
 ## Installation
 
 Options for the installation:
 
-1. installation via the plugin manager in Kanboard as soon as it is available in the list of available plugins (recommended).
-2. download the zip file from the release folder here in the repository and unzip it in the directory `plugins/ThemeMaestro` (recommended)
-3. clone the repository (current master) into the directory `plugins/ThemeMaestro` (not recommended)
+1. Installation via the plugin manager in Kanboard as soon as it is available in the list of available plugins (recommended).
+2. Download the zip file from the release folder here in the repository and unzip it in the directory `plugins/ThemeMaestro` (recommended)
+3. Clone the repository (current master) into the directory `plugins/ThemeMaestro` (not recommended)
 
 Note: The name of the plugin directory is case-sensitive
 
@@ -67,7 +67,7 @@ Note: The name of the plugin directory is case-sensitive
 
 ### Set up the default coloring for tasks
 
-it is recommended to install the [ColorManager](https://github.com/aljawaid/ColorManager) PlugIn and set "Bright White" as default colors for the tasks in the Kanboard settings section / Project settings / default task color. If you do so, all new tasks are created with a white background and white left border.
+It is recommended to install the [ColorManager](https://github.com/aljawaid/ColorManager) plugin and set "Bright White" as default colors for the tasks in the Kanboard settings section / Project settings / default task color. If you do so, all new tasks are created with a white background and white left border.
 
 You can color each task cards left border with one of the numerus colors of this plugin.
 
@@ -77,7 +77,7 @@ The theme consists mainly of the following CSS files:
 
 ```
 ThemeMaestro
-   ThemeMaestro.css             // Basis setup
+   theme-maestro.css             // Basis setup
    blue.css						// color blue definitions
    green.css					// color green definitions
    red.css	                    // color red definitions
@@ -85,7 +85,7 @@ ThemeMaestro
    column_colors_none.css       // no multi color headings
 ```
 
-This looks more complicated than it is. The main file `ThemeMaestro.css` includes the differences at the top of the file. Be sure that you only include **one** of the css color files and **one** of the css column color files.
+This looks more complicated than it is. The main file `theme-maestro.css` includes the differences at the top of the file. Be sure that you only include **one** of the css color files and **one** of the css column color files.
 
 ```css
 /*  main colors and vars include your favorit color.css here */
@@ -114,7 +114,7 @@ If you like it a bit more colorful you have the following options:
 
 Make sure to include `column_colors_multi.css` in `theme-maestro.css` see above.
 
-Open and edit  `column_colors_multi.css` and set your prefered colors . This css file is well document and you can easily figure out what to change how:
+Open and edit  `column_colors_multi.css` and set your prefered colors . This CSS file is well document and you can easily figure out what to change how:
 
 ##### All header fonts color - all boards
 
@@ -140,16 +140,17 @@ This applies to all headers fonts of all boards
 }
 ```
 
-This part sets the background color for the first column of every board in your Kanboard instance. It can be overwritten with the [CustomUserCSS](https://github.com/PapeCoding/kanboard-CustomUserCSS) plugin on a per user basis. Unfortunately that PlugIn has a seroius bug: it can only handle user CSS up to 255 chars.
+This part sets the background color for the first column of every board in your Kanboard instance. It can be overwritten with the [CustomUserCSS](https://github.com/PapeCoding/kanboard-CustomUserCSS) plugin on a per user basis. Unfortunately that plugin has a seroius bug: it can only handle user CSS up to 255 chars.
+
 
 ##### Coloring a specific column header for a specific board
 
-It is possible to set a color to a specific column on a specific board. To do so you have to identifiy the id of the target board
-- open your board
-- have a look into the address bar of your browser 
-- check the string `&project_id=xxx` in the address bar
+It is possible to set a color to a specific column on a specific board. To do so you have to identifiy the ID of the target board
+- Open your board
+- Have a look into the address bar of your browser 
+- Check the string `&project_id=xxx` in the address bar
 
-Let's say the id is `326` and you want to set a red background to the first column (= `nth-child(1)`) header only in that board. So here we go: 
+Let's say the ID is `326` and you want to set a red background to the first column (= `nth-child(1)`) header only in that board. So here we go: 
 
 ```css
 /* Example board with ID 326 first column header colored RED */
@@ -160,29 +161,26 @@ Let's say the id is `326` and you want to set a red background to the first colu
 
 This is very uncomfortable. But keep in mind this is the first public version of the theme.
 
+
 ## Possible further development
 
-
 - Improve all over design glitches (e. .g input boxes in task edit view etc.)
-
 - Allow to create additional color sets for the theme in the main setup of the Kanboard instance
-
 - Edit existing color sets
-
 - Delete color sets
-
 - Implementation of a color selector for each column header in `project settings / columns` to set color for background and font for that specific project / board.
 
-- ...
 
-## Author, contributors and license
+Authors & Contributors
+----------------------
 
-* Maestro Kanboard Theme by JustFxDev (Fx) - Author
+- [@JustFxDev (Fx)](https://github.com/JustFXDev) - Author
+- Benno Waldhauer - [WeKanboard Theme](https://github.com/bw-hro/WeKanboard) - Inspiration, CSS
+- [@aljawaid](https://github.com/aljawaid) - Contributor
+- _Contributors welcome_
+- _Help is needed especially for upcoming php plugin programming, but also for css / design improvements or just additional coloring schemes._
 
-* Benno Waldhauer  Theme [WeKanboard](https://github.com/bw-hro/WeKanboard) - Inspiration, CSS
 
-* This project is provided under the  [MIT Lizenz](../master/LICENSE "View MIT License")
-
-## Join
-
-*Contributors are welcome!* Help is needed especially for upcoming php plugin programming, but also for css / design improvements or just additional coloring schemes.
+License
+-------
+- This project is distributed under the [MIT License](../main/LICENSE "Read The MIT license")
