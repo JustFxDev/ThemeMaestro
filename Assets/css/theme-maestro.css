@@ -17,16 +17,16 @@
 
 /*  main colors and vars include your favorit color_name.css here */
 
-/* @import url("./red.css"); */
-@import url("./blue.css");
-/* @import url("./green.css"); */
+/* @import url("./Assets/css/red.css"); */
+@import url("./Assets/css/blue.css");
+/* @import url("./Assets/css/green.css"); */
 
 /*  Include column header colors for all boards and         */
 /*  column header colors for specific boards                */
 /*  if you wish to have different header colors per column  */
 
 /* @import url("./column_colors_multi.css"); */
-@import url("./column_colors_none.css");
+@import url("./Assets/css/column_colors_none.css");
 
 
 body{
