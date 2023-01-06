@@ -1,4 +1,4 @@
-![north_west](./assets/images/north_west.svg) Use the table of contents
+![north_west](./Assets/images/north_west.svg) Use the table of contents
 
 [![version](./Assets/images/version.svg)](https://github.com/JustFxDev/ThemeMaestro/releases) [![license](./Assets/images/license.svg)](https://github.com/JustFxDev/ThemeMaestro/blob/main/LICENSE) [![maintainedyes](./Assets/images/maintained.svg)](https://github.com/JustFxDev/ThemeMaestro/graphs/contributors)
 
