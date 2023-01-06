@@ -1,4 +1,6 @@
-[![version](./Assets/images/version.svg)](https://github.com/JustFxDev/ThemeMaestro/releases) [![license](./Assets/images/license.svg)](https://github.com/JustFxDev/ThemeMaestro/blob/main/LICENSE) [![maintainedyes](./Assets/images/maintainedyes.svg)](https://github.com/JustFxDev/ThemeMaestro/graphs/contributors)
+![north_west](./assets/images/north_west.svg) Use the table of contents
+
+[![version](./Assets/images/version.svg)](https://github.com/JustFxDev/ThemeMaestro/releases) [![license](./Assets/images/license.svg)](https://github.com/JustFxDev/ThemeMaestro/blob/main/LICENSE) [![maintainedyes](./Assets/images/maintained.svg)](https://github.com/JustFxDev/ThemeMaestro/graphs/contributors)
 
 **:star: If you use it, you should star it on GitHub!** *It's the least you can do for all the work put into it!*
 
@@ -73,16 +75,16 @@ You can color each task cards left border with one of the numerus colors of this
 
 #### Change the main color scheme of the theme
 
-The theme consists mainly of the following CSS files:
+The theme consists mainly of the following CSS files in `./Assets/css/`:
 
 ```
 ThemeMaestro
-   theme-maestro.css             // Basis setup
-   blue.css						// color blue definitions
-   green.css					// color green definitions
-   red.css	                    // color red definitions
-   column_colors_multi.css      // multi color headings 
-   column_colors_none.css       // no multi color headings
+   theme-maestro.css          // Basis setup
+   blue.css                   // color blue definitions
+   green.css                  // color green definitions
+   red.css                    // color red definitions
+   column_colors_multi.css    // multi color headings 
+   column_colors_none.css     // no multi color headings
 ```
 
 This looks more complicated than it is. The main file `theme-maestro.css` includes the differences at the top of the file. Be sure that you only include **one** of the css color files and **one** of the css column color files.
@@ -90,21 +92,21 @@ This looks more complicated than it is. The main file `theme-maestro.css` includ
 ```css
 /*  main colors and vars include your favorit color.css here */
 
-/* @import url("./Assets/css/red.css"); */
-@import url("./Assets/css/blue.css");
-/* @import url("./Assets/css/green.css"); */
+/* @import url("./red.css"); */
+@import url("./blue.css");
+/* @import url("./green.css"); */
 
 /*  Include column header colors for all boards and         */
 /*  column header colors for specific boards                */
 /*  if you wish to have different header colors per column  */
 
-/* @import url("./Assets/css/column_colors_multi.css"); */
-@import url("./Assets/css/column_colors_none.css");
+/* @import url("./column_colors_multi.css"); */
+@import url("./column_colors_none.css");
 ```
 
 You change in the CSS file, which color file the theme should use. If you want to create your own colors, then you simply copy e.g. `blue.css` and rename the file. 
 
-For example to `amber.css` Then you make the desired adjustments for the colors in this new file and integrate these `@import url(./Assets/css/amber.css)` instead of the `@import url(./Assets/css/blue.css)`.
+For example to `amber.css` Then you make the desired adjustments for the colors in this new file and integrate these `@import url(./amber.css)` instead of the `@import url(./blue.css)`.
 
 #### Change the color in the column headers
 
@@ -175,8 +177,8 @@ Authors & Contributors
 ----------------------
 
 - [@JustFxDev (Fx)](https://github.com/JustFXDev) - Author
-- Benno Waldhauer - [WeKanboard Theme](https://github.com/bw-hro/WeKanboard) - Inspiration, CSS
 - [@aljawaid](https://github.com/aljawaid) - Contributor
+- Benno Waldhauer - [WeKanboard Theme](https://github.com/bw-hro/WeKanboard) - Inspiration, CSS
 - _Contributors welcome_
 - _Help is needed especially for upcoming php plugin programming, but also for css / design improvements or just additional coloring schemes._
 
