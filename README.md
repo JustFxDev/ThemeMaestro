@@ -57,11 +57,11 @@ Important: If you use the [Customizer](https://github.com/creecros/Customizer) p
 
 Options for the installation:
 
-1. Installation via the plugin manager in Kanboard as soon as it is available in the list of available plugins (recommended).
+1. Installation via the plugin manager in Kanboard (recommended).
 2. Download the zip file from the release folder here in the repository and unzip it in the directory `plugins/ThemeMaestro` (recommended)
 3. Clone the repository (current master) into the directory `plugins/ThemeMaestro` (not recommended)
 
-Note: The name of the plugin directory is case-sensitive
+Note: All names in the plugin directory are case-sensitive
 
 **Important: all unused themes / all other themes should be removed from the plugins directory before using this theme (Kanboard can't handle multiple themes by now)**. 
 
@@ -69,17 +69,17 @@ Note: The name of the plugin directory is case-sensitive
 
 ### Set up the default coloring for tasks
 
-It is recommended to install the [ColorManager](https://github.com/aljawaid/ColorManager) plugin and set "Bright White" as default colors for the tasks in the Kanboard settings section / Project settings / default task color. If you do so, all new tasks are created with a white background and white left border.
+It is recommended to install the [ColorManager](https://github.com/aljawaid/ColorManager) plugin and set "Bright White" as default color for the tasks in the Kanboard settings section / Project settings / default task color. If you do so, all new tasks are created with a white background and white left border.
 
 You can color each task cards left border with one of the numerus colors of this plugin.
 
 #### Change the main color scheme of the theme
 
-The theme consists mainly of the following CSS files in `./Assets/css/`:
+The theme consists mainly of the following CSS files:
 
 ```
-ThemeMaestro
-   theme-maestro.css          // Basis setup
+ThemeMaestro/Assets/css/
+   theme_maestro.css          // Basis setup
    blue.css                   // color blue definitions
    green.css                  // color green definitions
    red.css                    // color red definitions
@@ -87,7 +87,7 @@ ThemeMaestro
    column_colors_none.css     // no multi color headings
 ```
 
-This looks more complicated than it is. The main file `theme-maestro.css` includes the differences at the top of the file. Be sure that you only include **one** of the css color files and **one** of the css column color files.
+This looks more complicated than it is. The main file `theme_maestro.css` includes the differences at the top of the file. Be sure that you only include **one** of the css color files and **one** of the css column color files.
 
 ```css
 /*  main colors and vars include your favorit color.css here */
@@ -106,7 +106,7 @@ This looks more complicated than it is. The main file `theme-maestro.css` includ
 
 You change in the CSS file, which color file the theme should use. If you want to create your own colors, then you simply copy e.g. `blue.css` and rename the file. 
 
-For example to `amber.css` Then you make the desired adjustments for the colors in this new file and integrate these `@import url(./amber.css)` instead of the `@import url(./blue.css)`.
+For example to `amber.css` Then make the desired adjustments for the colors in this new file and integrate these `@import url(./amber.css)` instead of the `@import url(./blue.css)` e. g.
 
 #### Change the color in the column headers
 
@@ -114,11 +114,11 @@ If you like it a bit more colorful you have the following options:
 
 ##### Colored column headers for all boards for all users
 
-Make sure to include `column_colors_multi.css` in `theme-maestro.css` see above.
+Make sure to include `column_colors_multi.css` in `theme-maestro.css` see above. It comes with a few predefined header colors.
 
 Open and edit  `column_colors_multi.css` and set your prefered colors . This CSS file is well document and you can easily figure out what to change how:
 
-##### All header fonts color - all boards
+##### All header fonts colors for all boards
 
 ```css
 /* column headers font  */
@@ -131,9 +131,9 @@ Open and edit  `column_colors_multi.css` and set your prefered colors . This CSS
 }
 ```
 
-This applies to all headers fonts of all boards
 
-##### Column 1 header background color - all boards
+
+##### Column 1 header background color for all boards
 
 ```css
 /* Column 1 */
@@ -142,17 +142,17 @@ This applies to all headers fonts of all boards
 }
 ```
 
-This part sets the background color for the first column of every board in your Kanboard instance. It can be overwritten with the [CustomUserCSS](https://github.com/PapeCoding/kanboard-CustomUserCSS) plugin on a per user basis. Unfortunately that plugin has a seroius bug: it can only handle user CSS up to 255 chars.
+This part sets the background color for the first column of **every** board in your Kanboard instance. It can be overwritten with the [CustomUserCSS](https://github.com/PapeCoding/kanboard-CustomUserCSS) plugin on a per user basis. Unfortunately that plugin has a seroius bug: it can only handle user CSS up to 255 chars.
 
 
-##### Coloring a specific column header for a specific board
+##### Coloring a specific column header for one specific board
 
 It is possible to set a color to a specific column on a specific board. To do so you have to identifiy the ID of the target board
 - Open your board
 - Have a look into the address bar of your browser 
 - Check the string `&project_id=xxx` in the address bar
 
-Let's say the ID is `326` and you want to set a red background to the first column (= `nth-child(1)`) header only in that board. So here we go: 
+Let's say the ID is `326` and you want to set a red background to the first column header (= `nth-child(1)`) only in that board. So here we go: 
 
 ```css
 /* Example board with ID 326 first column header colored RED */
@@ -178,7 +178,7 @@ Authors & Contributors
 
 - [@JustFxDev (Fx)](https://github.com/JustFXDev) - Author
 - [@aljawaid](https://github.com/aljawaid) - Contributor
-- Benno Waldhauer - [WeKanboard Theme](https://github.com/bw-hro/WeKanboard) - Inspiration, CSS
+- Benno Waldhauers [WeKanboard Theme](https://github.com/bw-hro/WeKanboard) - Inspiration, CSS
 - _Contributors welcome_
 - _Help is needed especially for upcoming php plugin programming, but also for css / design improvements or just additional coloring schemes._
 
