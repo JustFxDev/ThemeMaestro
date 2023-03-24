@@ -30,6 +30,7 @@
 
     --color-primary: var(--dark-font);
     --link-color-primary: var(--dark-font);
+    --link-color-hover: #b92929b6;
     --button-primary-background-color:var(--blue);
     --button-primary-background-color-focus:var(--dark-blue);
     --button-danger-background-color:var(--light-orange);
