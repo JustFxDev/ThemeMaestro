@@ -179,8 +179,9 @@ Authors & Contributors
 - [@JustFxDev (Fx)](https://github.com/JustFXDev) - Author
 - [@aljawaid](https://github.com/aljawaid) - Contributor
 - Benno Waldhauers [WeKanboard Theme](https://github.com/bw-hro/WeKanboard) - Inspiration, CSS
-- _Contributors welcome_
-- _Help is needed especially for upcoming php plugin programming, but also for css / design improvements or just additional coloring schemes._
+- Contributors welcome
+  - _Help is needed especially for upcoming php plugin programming, but also for css / design improvements or just additional coloring schemes._
+
 
 
 License
