@@ -4,7 +4,7 @@
 
     https://github.com/JustFxDev/ThemeMaestro
 
-    v0.7.0 - 01/2023
+    v0.9.0 - 03/2023
 
     to use white background with with border color for the tasks
     on the taskboard install the latest colormanager plugin and
@@ -12,7 +12,7 @@
 
     https://github.com/aljawaid/ColorManager
 
-    */
+*/
 
 
 /*  main colors and vars include your favorit color_name.css here */
@@ -28,6 +28,9 @@
 /* @import url("./column_colors_multi.css"); */
 @import url("./column_colors_none.css");
 
+:root {
+    --form-fields-border-radius: 4px;
+}
 
 body{
     background: var(--light-gray);
@@ -193,12 +196,18 @@ div.board-add-icon{
     font-size: 1.1em;
 }
 .board-add-icon i:hover {
-    color: var(--link-color-hover);
+    color: unset;
+}
+.board-column-header-task-count {
+    padding-left: 5px;
 }
 
 
-
 /* tasks */
+
+.task-board-category a:hover {
+    text-decoration: unset;
+}
 
 .task-board:last-child {
     margin-bottom: 2.5em !important;
@@ -210,6 +219,10 @@ div.board-add-icon{
     background:var(--middle-gray);
     height:70px;
     margin:10px;
+}
+
+.task-board-title a:hover {
+    text-decoration: none;
 }
 
 .task-board, .task-summary-container, #external-task-view{
@@ -400,6 +413,10 @@ div.board-add-icon{
 }
 
 /* some extras */
+
+.dropdown-submenu-open a:focus {
+    text-decoration: none;
+}
 .dropdown-submenu-open li:not(.no-hover):hover {
     background: var(--dropdown-menu-hover-background-color);
 }
@@ -489,6 +506,10 @@ table th a {
     color: var(--board-column-header-font-color)!important;
 }
 
+table th a:focus, table th a:hover  {
+    text-decoration: none;
+}
+
 .comments .comment:nth-child(even):not(.comment-highlighted):hover {
     background: var(--activity-event-hover-color);
 }
@@ -497,41 +518,87 @@ table th a {
     background: var(--activity-event-hover-color);
 }
 
-/* plugin manager plugin */
-.plugin-type-count-icon svg {
-    color: var(--blue-icon-dark);
+/* Edit task dlg */
+/* Colorselect dropdown */
+
+#modal-content a {
+    color: var(--link-color-hover);
+    text-decoration: none;
 }
 
-.plugin-type-count-total {
-    background-color: var(--blue-border-gradient-match);
-    color: var(--pp-white);
+#modal-content a:hover {
+    color: var(--link-color-hover);
+    text-decoration: underline;
 }
 
-.available-plugins-author > .plugin-type > .bi-plugin {
-    color: var(--pp-white);
+#modal-content .select2-container {
+    width: 190px!important;
+    height: 26px;
 }
 
-.available-plugins-author svg.octicon-law, .plugin-type svg {
-    fill: var(--pp-white);
-    color: var(--pp-white);
+#modal-content #form-owner_id, 
+#modal-content #form-category_id,
+#modal-content #form-column_id,
+#modal-content #form-priority {
+    background-color: white;
+    height: 28px;
+    border-radius: var(--form-fields-border-radius);
+    border-color: #CCCCCC;
+    border-width: 1px;
+    color: #000000;
 }
 
-th.plugin-structure, th.plugin-status, th.plugin-last-updated {
-    border-bottom: 0 !important;
-    font-weight: 600;
-    color: var(--pp-white);
-    position: relative;
+#modal-content #form-date_due,
+#modal-content #form-date_started, 
+#modal-content #form-time_estimated,
+#modal-content #form-time_spent,
+#modal-content #form-score, 
+#modal-content #form-reference {
+    border-radius: var(--form-fields-border-radius);
+    height: 25px;
 }
 
-#InstalledPluginsTable > thead > tr > th {
-    border: unset;
-    background: var(--board-column-header-color) !important;
-    color: var(--pp-white);
-    text-shadow: unset;
-    font-weight: 600;
-    box-shadow: unset;
-    padding: var(--table-head-padding);
+#modal-content #form-category_id,
+#modal-content #form-column_id,
+#modal-content #form-priority {
+    width: 190px;
 }
+#modal-content #form-title,
+.text-editor-write-mode > textarea {
+        border-radius: 4px;
+}
+
+#modal-content #form-score {
+    width: 150px;
+}
+
+/* resize tag input field */
+#modal-content .select2-container--default, #modal-content .select2-selection--multiple {
+    width: 725px!important;
+    max-width: 98%;   
+}
+
+/* MetaMagik custom fields in task edit dlg (fx) */
+#form-metamagikkey_Zieldatum, 
+#form-metamagikkey_Geschlossen, 
+#form-metamagikkey_Initiiert, 
+#form-metamagikkey_PGM {
+    border-radius: var(--form-fields-border-radius);
+    width: 290px;
+}
+/* make modal background for dialogs lighter */
+#modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.4);
+    overflow: auto;
+    z-index: 100;
+}
+
+
 /* buttons */
 .install-date {
     width: 120px;
