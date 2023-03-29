@@ -1,11 +1,20 @@
 # Changelog
 
-## v0.8.0
-
 ### What's Changed
 
 _(most recent changes are listed on top):_  
-- Structure fixes, version infos updated. = @JustFxDev
+
+## v0.9.0
+
+- Fixed some errors and glitches
+- removed Plugin-Manager related css because that has been fixed there
+- lighter modal background
+- Fixed tags input field in task dialog
+- Fixed WIP spacing in column header
+
+## v0.8.0
+
+- Structure fixes, version infos updated. - @JustFxDev
 - Update README.md - @JustFxDev
 - Generic version file - @JustFxDev
 - Update translations.php - @JustFxDev
@@ -21,9 +30,6 @@ _(most recent changes are listed on top):_
 
 ## v0.7.0
 
-### What's Changed
-
-_(most recent changes are listed on top):_  
 - Initial release
 
 
